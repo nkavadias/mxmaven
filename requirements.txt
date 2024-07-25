@@ -1,0 +1,7 @@
+dnspython >= 2.4.2
+peewee
+inflect
+tabulate
+colorama
+# run pip install -r requirements.txt
+# to install requirements
