@@ -7,7 +7,7 @@ Large organisations can have hundreds of domains. A threat actor may use a singl
 
 ## Install Instructions:
 
-```sh
+```
 git clone https://github.com/nkavadias/mxmaven.git
 cd mxmaven
 pip install -r requirements.txt
@@ -21,7 +21,7 @@ MX Maven can check a single domain using the -s parameter.  Although, it has a m
 
 MXMaven has three options to run the tool. The first option is `-s` or `--single`, which checks a single domain. The second option is `-m` or `--multidomain`, which accepts a text file with a domain on each line. The third option is `-a` or `--showall`, which prints a report of all stored records. The tool stores all DNS record lookups in a relation database, which defaults to SQLite3. However, it can be easily reconfigured to use MySQL, PosgresSQL, and CockroachDB, as it uses the Peewee Python ORM library.
 
-Here is the sample result from running ``sh python mxmaven.py -m demo.txt ``
+Here is the sample result from running ``python mxmaven.py -m demo.txt ``
 
 ![demo output](/result_demo.png)
 
